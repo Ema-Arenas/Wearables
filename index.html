@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Pensamiento Computacional" />
+        <link href="style.css" rel="stylesheet" />
+        <title>&#129412;Wearables</title>
+    </head>
+    <body>
+        <header>
+            <h1>
+                <a>Wearables</a>
+            </h1>
+        </header>
+        <main>
+            <div>
+                <p>Los wearables son todas aquellas prendas de vestir que llevan incorporados dispositivos electrónicos capaces de cumplir una función particular.</p>
+                <p>Son prácticos, tienen conectividad inalámbrica, sensores y funciones concretas.</p>
+            </div>
+        </main>
+        <main>
+                <h1>El Artista: Shih Wei Chieh</h1>
+        </main>
+        <main>
+             <div id="contenido" style="display: flex; align-items: center;"> 
+      <img src="https://modernbodyfestival.org/2016/wp-content/uploads/Shih-Wei-Chieh-profile-large-744x755.jpg" class="artista1" style="max-width: 500px; margin-right: 30px;">
+    <h1 style="font-size: 2.32em; font-weight: 390;">
+        Nacido en 1982, <span class="bold">Shih Wei Chieh 施 惟 捷</span> es un artista taiwanés y fabricante especializado en <span class="bold">textiles electrónicos</span>, sistemas de galvanómetro láser y células solares sensibilizadas con tintes de bricolaje. Cofundó <span class="bold">Tribal Against Machine</span>, un campamento que une las culturas textiles tradicionales con los textiles electrónicos y los dispositivos portátiles.
+    </h1>
+             </div>
+        </main>
+         <main>
+                <h1>I am very happy i hope you are too</h1>
+        </main>
+        <main> <div id="contenido" style="display: flex; align-items: center; justify-content: flex-end;">          
+            <h2 style="font-size: 2.1em; font-weight: 390;"> <!-- Ajusta el tamaño aquí -->
+                Es una pieza creada en <span class="bold" style="color: #d86ef0;"> Oaxaca, México</span> , que combina bordado en punto de cruz con componentes electrónicos. Utiliza técnicas de carpintería y bordado local, integrando circuitos electrónicos en el diseño. Es <span class="bold" style="color: #d86ef0;"> Portátil, flexible y posee capacidad de lavado. </span> Sirve como medio de intercambio entre la artesanía tradicional, la preservación cultural y la programación. Incluye una carta que refleja temas de nostalgia e identidad.
+            </h2>
+            <img src="https://freight.cargo.site/w/2000/q/75/i/fccb014879a987d7956d87b9c7b18360b1e37ff4a67f2d3d02d6990ac1a7746d/13_12_Hill_008_o.jpg" style="max-width: 500px; margin-left: 30px;">
+           </div>
+        </main>
+        <main>
+                <h1>Proceso Creativo</h1>
+        </main>
+         <main>
+            <div style="text-align: center; margin-top: 20px;">
+                <img src="grafico.png" style="max-width: 100%; height: auto; margin-bottom: 20px;">
+            </div>
+        </main>
+         <main>
+                <h1>Conclusiones</h1>
+        </main>
+         <main>
+        <div id="contenido" style="display: flex; align-items: center;">
+            <figure>
+                <img src="https://glitchmagazine.xyz/wp-content/uploads/2023/10/anrealage-autumn-winter-2023-paris-fashion-week-uv-clothing_dezeen_2364_col_29-scaled-colour-changing-garments-as-seen-on-GLITCH.jpg" class="artista1" style="max-width: 450px; margin-right: 30px;">
+                <figcaption>Anrealage AW/23 Paris Fashion Week</figcaption>
+            </figure>
+            <h1 style="font-size: 2.17em; font-weight: 390;">
+                Para impulsar la <span class="bold">viabilidad comercial</span> de los e-textiles y wearables, es crucial <span class="bold">optimizar procesos de producción</span> mediante soluciones industriales que reduzcan costos y tiempos. Elegir materiales innovadores, como tejidos con <span class="bold">nanotecnología y sensores biométricos</span> integrados, permitirá desarrollar productos que se autolimpian y se adaptan al entorno. Además, fomentar <span class="bold">colaboraciones comunitarias en talleres</span> facilitará la investigación y el desarrollo de prototipos, promoviendo la creación de aplicaciones comerciales que sean estéticamente atractivas y tecnológicamente avanzadas.
+            </h1>
+        </div>
+    </main>
+       
+
+
+
+        <footer>
+            <p>Trabajo realizado por: Lucas Góngora, Valeria Marsino, María Luisa Vial, Ema Arenas, Francini Vargas y Darlyn Tamara</p>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js" integrity="sha512-bcfltY+lNLlNxz38yBBm/HLaUB1gTV6I0e+fahbF9pS6roIdzUytozWdnFV8ZnM6cSAG5EbmO0ag0a/fLZSG4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            var h, s;
+            function setup() {
+                createCanvas(windowWidth, windowHeight).position(0, 0).style("z-index", "-1");
+            }
+            function draw() {
+                colorMode(HSB, 360, 100, 100);
+                h = map(mouseX, 0, windowWidth, 0, 360);
+                s = map(mouseY, 0, windowHeight, 100, 0);
+                background(h, s, 55);
+            }
+            function windowResized() {
+                resizeCanvas(windowWidth, windowHeight);
+            }
+        </script>
+    </body>
+</html>
